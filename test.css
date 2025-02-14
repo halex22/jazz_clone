@@ -3,7 +3,10 @@
 .container{
 display: grid;
 grid-template-columns: 1fr 1fr;
-
+grid-template-rows: 20vh 60vh 20vh;
+grid-template-areas: "div1 div2"
+". div2"
+"div3 div2";
 
 }
 
@@ -11,10 +14,21 @@ grid-template-columns: 1fr 1fr;
 width: 200px;
 height: 200px;
 background: red;
+grid-area: div1;
 }
 
 .div2{
     width: 200px;
-    height: 200px;
+    height: 100vh;
    background: black;
+    grid-area: div2;
+
+}
+
+.div3 {
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    grid-area: div3;
+
 }

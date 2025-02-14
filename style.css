@@ -17,16 +17,26 @@ body, p {
 
 #logo {
     grid-area: logo;
+padding:  20px 20px 0 20px;
+
 }
 
 #title {
     grid-area: title;
-    align-self: baseline;
+    
 }
 
 #btn-player {
     grid-area: btn-player;
 }
+
+#btn-player img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
 
 
 .container {
@@ -39,4 +49,21 @@ body, p {
     "title btn-player"
     ;
     background-color: #ffcc00;
+}
+
+@media (max-width: 992px) {
+    .container {
+        /* grid-template-columns: 1fr;
+        grid-template-rows: 20vh 60vh 20vh;
+        grid-template-areas:
+        "logo"
+        "btn-player"
+        "title "
+        ; */
+        display: block;
+    }
+}
+
+.img1 {
+    background-color: #660099;
 }
