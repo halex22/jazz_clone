@@ -1,5 +1,6 @@
 :root {
-    --yellow-bg: #ffcc00
+    --yellow-bg: #ffcc00;
+    --purple-bg: #660099;
 }
 
 
@@ -7,9 +8,9 @@
     box-sizing: border-box;
 }
 
-
 ul {
     padding-inline-start: 0;
+    list-style-type: none;
 }
 
 
@@ -34,6 +35,9 @@ a {
     max-width: 100%;
 }
 
+.bg-purple {
+    background-color: var(--purple-bg);
+}
 
 #title {
     grid-area: title;
@@ -198,7 +202,145 @@ a {
     margin-right: 1.25;
  }
 
-/* #devices header {
+ .pb-40 {
+    padding: 2.5rem;
+ }
+
+ .pb-8 {
+    padding-bottom: 0.5rem;
+}
+
+.py-8 {
+    padding: 1rem 0;
+}
+
+
+ .device {
+    font-weight: bolder;
+ }
+
+#double-j-container {
     display: flex;
-    justify-content: end;
-} */
+}
+
+#second-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+#schedule {
+    margin-top: 1rem;
+}
+
+.flexed-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.black-sphere-container {
+    position: relative;
+    width: 500px;
+}
+
+.black-sphere {
+    position: absolute;
+    background-color: black;
+    height: 11.5vw;
+    width: 11.5vw;
+    border-radius: 100%;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+}
+
+#week-container {
+    padding: 7.5rem 0;
+}
+
+#week-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+    ". . mon"
+    "tue wed ."
+    ". thu ."
+    ". . fri"
+    "sat sun .";
+}
+
+@media (max-width: 990px) {
+    #week-list {
+        display: block;
+    }
+}
+
+#week-list li {
+    padding-bottom: 3rem;
+}
+
+#mon {
+    grid-area: mon;
+}
+#tue {
+    grid-area: tue;
+}
+#wed {
+    grid-area: wed;
+}
+#thu {
+    grid-area: thu;
+}
+#fri {
+    grid-area: fri;
+}
+#sat {
+    grid-area: sat;
+}
+#sun {
+    grid-area: sun;
+}
+
+.capitalized {
+    text-transform: capitalize;
+}
+
+.hour {
+    padding-right: 1rem;
+}
+
+
+.sch-day-list {
+    font-size: 24px;
+}
+
+.day {
+    font-size: 110px;
+    padding: 1.25rem 0 3rem 0;
+}
+
+
+.scrolling-text {
+    white-space: nowrap; 
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    left: -100%;
+    animation: scrollText 10s linear infinite;
+  }
+  
+  @keyframes scrollText {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100vw);
+    }
+  }
+  
+
+  #sheep {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
