@@ -70,7 +70,6 @@ a {
 }
 
 #song {
-    font-size: 24px;
     padding-bottom: 40px;
 }
 
@@ -138,11 +137,25 @@ a {
 }
 
 
+
 #third-section {
     display: grid;
     grid-template-columns: 2fr 1fr;
     background-color: var(--yellow-bg);
-    padding: 120px;
+}
+
+
+#billboard h3 {
+    display: inline;
+    margin-left: 1rem;
+}
+
+#billboard-list-container {
+    padding: 40px 0 80px 0;
+}
+
+#billboard-list-container .sphere-container {
+    margin-bottom: 8rem;
 }
 
 @media (max-width: 1024px) {
@@ -152,11 +165,9 @@ a {
 }
 
 
-
-#instructions img {
-    position: absolute;
-    bottom: 0;
-}
+#j-img {
+    margin-top: 26rem;
+} 
 
 
 #billboard ul {
@@ -175,10 +186,25 @@ a {
 } 
 /* important */
 
+.big-letter-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
 #stations {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+
 }
+
+@media (max-width: 1024px) {
+    #stations {
+        display: block;
+    
+    }
+}
+
 
 .big-letter-container {
     order: 1;
@@ -274,7 +300,18 @@ a {
 
 
 #double-j-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.j-container {
+    width: 100%;
+}
+
+.j-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 #second-img {
@@ -304,6 +341,14 @@ a {
     top: 0;
     right: 0;
     margin-right: 20px;
+}
+
+
+@media (max-width: 1024px) {
+    .black-sphere {
+        height: 0;
+        width: 0;
+    }
 }
 
 #week-container {
@@ -490,9 +535,6 @@ a {
 }
 
 
-.img-footer {
-    padding: 11.25rem;
-}
 
 #go-back-arrow {
     background-color: var(--red-bg);
@@ -503,10 +545,45 @@ a {
 }
 
 
+
+
 footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+    grid-template-columns: 1fr 1fr; 
+  }
+  
+  .img-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 11.25rem;
+  }
+  
+  .img-footer img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+  }
+  
+  @media (max-width: 768px) {
+    footer {
+      grid-template-columns: 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      height: 50vh; 
+    }
+  }
+  
+
+  #go-back-arrow img {
+    transition: transform 0.3s ease-in-out; 
+  }
+
+  #go-back-arrow:hover img {
+    transform: rotate(-45deg); 
+  }
+
 
 .fixed {
     position: fixed;
@@ -524,3 +601,10 @@ footer {
     top: 20px;
 }
   
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}

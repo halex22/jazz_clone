@@ -18,10 +18,10 @@
       </div>
 
       <div id="title">
-        <div id="now">Now playing</div>
+        <div id="now" class="fz-16">Now playing</div>
         <hgroup>
           <h3 id="artist">Jazzmeia Horn</h3>
-          <p id="song">Tight</p>
+          <p id="song" class="fz-24">Tight</p>
         </hgroup>
       </div>
 
@@ -38,82 +38,95 @@
     <!-- third section -->
      <section id="third-section">
       <!-- title container -->
-      <div id="instruction">
-        <div  class="big-title">
-          <h2>How to <br>  listen <br> to</h2>
-          <img  src="/assets/assets_letters-j.svg" alt="">
+      <div id="instruction" class="px-20 ">
+        <div  class="big-title relative">
+          <h2 class="absolute">How to <br>  listen <br> to</h2>
+          <div class="">
+            <img id="j-img" src="/assets/assets_letters-j.svg" alt="">
+          </div>
+          
         </div>
-  
-        
       </div>
+
       <!-- billboard -->
-      <div id="billboard">
-        <h3 class="fz-110">FM</h3>
-        <ul>
-          <li class="border-y-t">
-            <div class="flexed-line">
-              <h4 class="fz-24">Braşov</h4>
-              <span>#</span>
-            </div>
-          </li>
-          <li class="border-y-t">
-            <div class="flexed-line">
-              <h4 class="fz-24">Bucureşti</h4>
-              <span class="fz-16">#</span>
-            </div>
-          </li>
-          <li class="border-y-t">
-            <div class="flexed-line">
-              <h4 class="fz-24">Cluj Napoca</h4>
-              <span class="fz-16">#</span>
-            </div>
-          </li>
-          <li class="border-y-t">
-            <div class="flexed-line">
-              <h4 class="fz-24">Constanţa</h4>
-              <span class="fz-16">#</span>
-            </div>
-          </li>
-          <li class="border-y-t">
-            <div class="flexed-line">
-              <h4 class="fz-24">Craiova</h4>
-              <span class="fz-16">#</span>
-            </div>
-          </li>
-          <li class="border-y-t">
-            <div class="flexed-line">
-              <h4 class="fz-24">Iaşi</h4>
-              <span class="fz-16">#</span>
-            </div>
-          </li>
-          <li class="border-y-t">
-            <div class="flexed-line">
-              <h4 class="fz-24">Oradea</h4>
-              <span class="fz-16">#</span>
-            </div>
-          </li>
-          <li class="border-y-t">
-            <div class="flexed-line">
-              <h4 class="fz-24">Timişoara</h4>
-              <span class="fz-16">#</span>
-            </div>
-          </li>
-          <li class="border-y-t border-y-b">
-            <div class="flexed-line">
-              <h4 class="fz-24">Sibiu</h4>
-              <span class="fz-16">#</span>
-            </div>
-          </li>
-        </ul>
+      <div id="billboard-list-container">
+        <div>
+          <div class="sphere-container">
+            <div class="black-sphere"></div>
+        </div>
+        <div id="billboard" class="px-20">
+          <span class="fz-60">1</span>
+          <h3 class="fz-110">FM</h3>
+          <ul id="billboard-list" class="px-20">
+            <li class="border-y-t">
+              <div class="flexed-line">
+                <h4 class="fz-24">Braşov</h4>
+                <span>#</span>
+              </div>
+            </li>
+            <li class="border-y-t">
+              <div class="flexed-line">
+                <h4 class="fz-24">Bucureşti</h4>
+                <span class="fz-16">#</span>
+              </div>
+            </li>
+            <li class="border-y-t">
+              <div class="flexed-line">
+                <h4 class="fz-24">Cluj Napoca</h4>
+                <span class="fz-16">#</span>
+              </div>
+            </li>
+            <li class="border-y-t">
+              <div class="flexed-line">
+                <h4 class="fz-24">Constanţa</h4>
+                <span class="fz-16">#</span>
+              </div>
+            </li>
+            <li class="border-y-t">
+              <div class="flexed-line">
+                <h4 class="fz-24">Craiova</h4>
+                <span class="fz-16">#</span>
+              </div>
+            </li>
+            <li class="border-y-t">
+              <div class="flexed-line">
+                <h4 class="fz-24">Iaşi</h4>
+                <span class="fz-16">#</span>
+              </div>
+            </li>
+            <li class="border-y-t">
+              <div class="flexed-line">
+                <h4 class="fz-24">Oradea</h4>
+                <span class="fz-16">#</span>
+              </div>
+            </li>
+            <li class="border-y-t">
+              <div class="flexed-line">
+                <h4 class="fz-24">Timişoara</h4>
+                <span class="fz-16">#</span>
+              </div>
+            </li>
+            <li class="border-y-t border-y-b">
+              <div class="flexed-line">
+                <h4 class="fz-24">Sibiu</h4>
+                <span class="fz-16">#</span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
      </section>
 
+
+     <!-- stations sections -->
      <section id="stations" class="y-bg">
 
+      <!-- a image svg -->
       <div class="big-letter-container px-20">
         <img src="/assets/assets_letters-a.svg" alt="">
       </div>
 
+      <!-- station list -->
       <div class="px-20">
         <div>
           <span class="fz-60 me-20">2</span>
@@ -512,7 +525,7 @@
           <div>
             <div class="sphere-container">
               <div class="black-sphere"></div>
-            </div>
+          </div>
             
 
             <div id="contact-data" class="px-20">
